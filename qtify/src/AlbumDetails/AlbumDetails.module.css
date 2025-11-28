@@ -1,0 +1,91 @@
+.backButton{
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 78px;
+    height: 40px;
+    width: 40px;
+}
+
+.albumInfo{
+    margin-left: 78px;
+    margin-right: 78px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
+}
+
+.albumData{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;   
+    color: #ffffff; 
+    font-family: Poppins;
+    gap: 10px;
+}
+
+.albumSpecs, .shuffleDiv{
+    display: flex;
+    gap: 5px;
+}
+
+.albumInfo > img {
+    object-position: center;
+    height: 329px;
+    width: 288px;
+    border-radius: 12px;
+}
+
+.shuffleDiv{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.shuffle{
+    color: #ffffff;
+    background-color: #34C94B;
+    font-family: Poppins;
+    height: 46px;
+    width: 131px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.addToLib{
+    background-color: transparent;
+    border: 1px solid #34C94B;
+    color: #34C94B;
+    font-family: Poppins;
+    height: 46px;
+    width: 207px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+@media (max-width: 450px) {
+    .albumInfo{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 640px) {
+    .albumSpecs, .shuffleDiv{
+        display: flex;
+        flex-direction: column;
+    }
+}

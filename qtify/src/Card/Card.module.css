@@ -1,0 +1,14 @@
+.chipArea{
+    margin: 4px 8px;
+}
+
+.cardText{
+color: #FFFFFF;
+font-family: Poppins;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0px;
+margin: 8px 0px;
+}
