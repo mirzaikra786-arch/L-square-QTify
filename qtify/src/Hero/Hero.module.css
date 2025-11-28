@@ -1,5 +1,5 @@
 .hero {
-  background-color: transparent;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,7 +7,7 @@
   margin: 16px;
 }
 .heroText{
-color: #FFFFFF;
+color: white;
 font-family: Poppins;
 font-weight: 600;
 font-size: 32px;
