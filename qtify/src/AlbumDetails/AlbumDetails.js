@@ -51,7 +51,10 @@ export default function AlbumDetail(){
         }
     }
     return(<>
-        <Link to="/"><button className={styles.backButton}><ArrowBackIcon/></button></Link>
+{ /*<Link to="/">*/ }
+        <button className={styles.backButton}><ArrowBackIcon/>
+        </button>
+       {/* </Link> */ }
        {data && <div className={styles.albumInfo}>
           <img src={data.image} alt="albumPoster"/>  
            <div className={styles.albumData}>

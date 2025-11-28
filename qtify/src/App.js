@@ -1,4 +1,4 @@
-import {Routes, Route} from 'react-router-dom';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import './App.css';
 import Navbar from "./Navbar/Navbar"
 import AlbumDetail from './AlbumDetails/AlbumDetails';
@@ -7,6 +7,7 @@ import Landing from './Landing';
 function App() {
   return (
     <>
+    <BrowserRouter>
     <div className="App">
         <Navbar/>
     <Routes>
@@ -15,6 +16,7 @@ function App() {
   </Routes>
   <AudioPlayer/>    
     </div>
+    </BrowserRouter>
     </>
   );
 }

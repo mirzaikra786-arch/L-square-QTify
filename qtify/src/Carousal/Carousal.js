@@ -56,12 +56,13 @@ export default function Carousel({data, fromSongsSection = false}) {
             },
           }}
     >
-        {data.map((eachObj)=>{
+    {data.map((eachObj)=>{
                         return <SwiperSlide key={eachObj.id}>
                             {fromSongsSection ? <AlbumCard id = {eachObj.id} image = {eachObj.image} title = {eachObj.title} Likes = {eachObj.likes}/> 
                             : <Link style={{textDecoration: "none"}} to={`/AlbumDetail/:${eachObj.id}`}><AlbumCard id = {eachObj.id} image = {eachObj.image} title = {eachObj.title} Follows = {eachObj.follows}/></Link>}
                             </SwiperSlide>
                     })}
+               
     </Swiper>
     <div>
           <button className={styles.prevButton} ref={swiperPrevSVG}><SwiperPrev/></button>
